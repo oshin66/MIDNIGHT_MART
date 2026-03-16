@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MidnightMart | Your Premium Online Store</title>
+  <meta name="description" content="Shop electronics, clothing, daily essentials and hardware at MidnightMart — your premium online store."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<header class="top-bar">
+  <div class="logo">
+    <div>
+      <div class="logo-text">midnight<span class="logo-dot">.</span></div>
+      <div class="logo-tagline">mart</div>
+    </div>
+  </div>
+  <div class="deliver-to">
+    <div>
+      <span class="label">Deliver to</span>
+      <span class="location">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        India
+      </span>
+    </div>
+  </div>
+  <div class="search-bar">
+    <select class="search-category"><option>All</option><option>Electronics</option><option>Clothing</option><option>Essentials</option><option>Hardware</option></select>
+    <input class="search-input" id="search-input" placeholder="Search MidnightMart" type="text"/>
+    <button class="search-btn" aria-label="Search"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
+  </div>
+  <div class="header-actions">
+    <button class="header-action"><span class="label">Hello, Sign in</span><span class="value">Account & Lists</span></button>
+    <button class="header-action"><span class="label">Returns</span><span class="value">& Orders</span></button>
+    <button class="header-action cart-btn">
+      <div class="cart-icon">
+        <span class="cart-count" id="cart-count">0</span>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+      </div>
+      <span class="cart-text">Cart</span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== SUB NAV ===== -->
+<nav class="sub-nav">
+  <a href="#">☰ All</a><a href="#electronics">Electronics</a><a href="#clothing">Clothing</a><a href="#daily-needs">Daily Essentials</a><a href="#hardware">Hardware</a><a href="#">Today's Deals</a><a href="#">Best Sellers</a><a href="#">New Arrivals</a><a href="#">Customer Service</a><a href="#">Gift Cards</a>
+</nav>
+
+<!-- ===== HERO CAROUSEL ===== -->
+<section class="hero-section">
+  <div class="hero-carousel">
+    <div class="hero-slide active" style="background:linear-gradient(135deg,#131921 0%,#1a2940 50%,#0d3b66 100%)">
+      <div class="hero-slide-content">
+        <div class="hero-slide-text">
+          <span class="badge">Deal of the Day</span>
+          <h2>Pro Audio<br/>Studio Gen-3</h2>
+          <p>Crystal clear sound with the latest noise cancellation technology. Designed for professionals.</p>
+          <button class="hero-cta">Shop Now — $299</button>
+        </div>
+        <div class="hero-slide-image">
+          <img alt="Pro Audio Studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPq0okZ9PU3Mm5_qjp3snq1WNCBIaMTwskodbyPBcGjJT5n_YM2e0cVQX9CtWJeCWdfInHlTaIbZaCagqeTY8EXFGsbFiP9lg3rQWlyzMJw8XV1nvZaTThAIPL949AbaROBJbI-eASS136FGmvphZjEGZ2AHSWQg1f15X0YEKb1ZcueboahYWJK6FxJEYNwwq5To1ORF1bzOVxB-XkpGIM3wolvjPnDfHwy0DBnvU7TU_QNpBLEo9NpmldMhACnIY5hgvqqcLdfHlm"/>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)">
+      <div class="hero-slide-content">
+        <div class="hero-slide-text">
+          <span class="badge">Best Seller</span>
+          <h2>Midnight Series<br/>Watch</h2>
+          <p>Titanium case with black sport loop. Precision timekeeping meets style.</p>
+          <button class="hero-cta">Explore — $399</button>
+        </div>
+        <div class="hero-slide-image">
+          <img alt="Midnight Watch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNyioFhrI5Q6hoO8u0PUHb9hBHcWxtFbUP3VpOg9dOk9yUUkcv853bUY3Vjrj9hK4NsVfOGCR3oFeQDmB1SsL_V6wNSjYHfNkaPHj2VhCWPxKpjt1i3j8FAGXVLPTMaHkIs22hBKs7_JZvHKKWTY0pZyxBKZIriix8Bp22pUvrNBZmez-Fb-_vS_YRm6i81Wa66HmY5w9oXojgD7QRL822qZ5J_lFSBUsvJwYari_UEwFrkJSiQ9izhKCG8LhKWiClFNAZpW_QPMjQ"/>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide" style="background:linear-gradient(135deg,#0a192f 0%,#20232a 50%,#2d3436 100%)">
+      <div class="hero-slide-content">
+        <div class="hero-slide-text">
+          <span class="badge">New Arrival</span>
+          <h2>Midnight Tech<br/>Parka</h2>
+          <p>Water-resistant, breathable fabric engineered for the modern adventurer.</p>
+          <button class="hero-cta">Shop Now — $245</button>
+        </div>
+        <div class="hero-slide-image">
+          <img alt="Midnight Parka" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOzlLex1sFLNfkH3Tarjtoavk9398ArBL18B7d-r7rL-x03iPi_kQVVbISN14U-yWr07ySryXjHUyvhUmNckIRl2qwuRq0_BiE9l9g-fu1wJeteuHJvf4UQoMrOshTm7f4ln0aj7L87xmmGz9JTSuracXpdSRbU44Zww6zl6lCTWH15ZB6btuB_Rebc9YcUqlfxA6L30UN1KPxPu_6ZBlfxpR5Vob3TooXL99aMZL-MnCEOkfgDfihWXSUCz4_vzohGn3ZXdhCVHuy"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="hero-nav-btn prev" aria-label="Previous">‹</button>
+  <button class="hero-nav-btn next" aria-label="Next">›</button>
+  <div class="hero-bottom-fade"></div>
+</section>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+
+<!-- Category Quick Cards -->
+<section class="category-grid" id="categories"></section>
+
+<!-- Deal of the Day -->
+<section class="deal-banner" id="deal-section">
+  <div class="deal-banner-header">
+    <h2>⚡ Today's Deals</h2>
+    <div class="deal-timer">Ends in: <span class="timer-block" id="timer-hours">08</span>:<span class="timer-block" id="timer-mins">45</span>:<span class="timer-block" id="timer-secs">30</span></div>
+    <a href="#" class="see-all-deals">See all deals</a>
+  </div>
+  <div class="product-scroll-row" id="deals-row"></div>
+</section>
+
+<!-- Electronics -->
+<section class="product-scroll-section" id="electronics">
+  <div class="product-scroll-header"><h2>Featured Electronics</h2><a href="#">See all ›</a></div>
+  <div class="product-scroll-row" id="electronics-row"></div>
+</section>
+
+<!-- Promo Banner -->
+<div class="promo-banner">
+  <div class="promo-text">
+    <span class="promo-label">Limited Time</span>
+    <h2>Free Shipping on Orders Over $50</h2>
+    <p>Plus get an extra 10% off your first order when you sign up.</p>
+    <button class="promo-cta">Sign Up Now →</button>
+  </div>
+  <div class="promo-image">
+    <img alt="Promo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQGedFrm8G1dERLnm8DAXO_NXD2paagd95lUK2J1uvzGoOxkSEIveBOyg5kDQjjrK-KsJywo6fQdC4ff1vSCukdiTU6cXmww2QbjHa34-aWX84ZslNPyAyxIIgH07qPLgskL4iO34RsW_QBy1CMBTTQeLCWTChOhYgsF9OYnPeKBDJmQ8g8H692WOLnRR3Ct1-OTnrxAQjz32gfS873h7Nok1_xKaH4WhVJrkW7G7rpClOWeJGeJWVmDDbNocThfkAjvZM1pWT2Lj_"/>
+  </div>
+</div>
+
+<!-- Clothing -->
+<section class="product-grid-section" id="clothing">
+  <div class="product-scroll-header"><h2>Latest Clothing</h2><a href="#">View Collection ›</a></div>
+  <div class="product-grid" id="clothing-grid"></div>
+</section>
+
+<!-- Daily Essentials -->
+<section class="product-scroll-section" id="daily-needs">
+  <div class="product-scroll-header"><h2>Daily Essentials</h2><a href="#">Shop All ›</a></div>
+  <div class="product-scroll-row" id="essentials-row"></div>
+</section>
+
+<!-- Hardware -->
+<section class="product-grid-section" id="hardware">
+  <div class="product-scroll-header"><h2>Pro Hardware</h2><a href="#">View Tools ›</a></div>
+  <div class="product-grid" id="hardware-grid"></div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<button class="back-to-top" id="back-to-top">Back to top</button>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col"><h4>Get to Know Us</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Press Releases</a></li><li><a href="#">MidnightMart Science</a></li></ul></div>
+    <div class="footer-col"><h4>Connect with Us</h4><ul><li><a href="#">Facebook</a></li><li><a href="#">Twitter</a></li><li><a href="#">Instagram</a></li></ul></div>
+    <div class="footer-col"><h4>Make Money with Us</h4><ul><li><a href="#">Sell on MidnightMart</a></li><li><a href="#">Sell under Private Brands</a></li><li><a href="#">Advertise Your Products</a></li><li><a href="#">Become an Affiliate</a></li></ul></div>
+    <div class="footer-col"><h4>Let Us Help You</h4><ul><li><a href="#">Your Account</a></li><li><a href="#">Returns Centre</a></li><li><a href="#">100% Purchase Protection</a></li><li><a href="#">Help</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-logo">midnight<span>.</span>mart</div>
+    <p class="footer-copyright">© 2026 MidnightMart. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
